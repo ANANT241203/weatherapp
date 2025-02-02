@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #42597a, #263754);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    width: 375px;
+    height: 812px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+}
+
+.current-weather {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.current-weather .temperature {
+    font-size: 96px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.current-weather .condition {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.current-weather .aqi {
+    font-size: 16px;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.forecast {
+    margin: 20px;
+}
+
+.forecast-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.five-day {
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
+
+.hourly {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+
+.hour {
+    text-align: center;
+    flex: 1;
+    margin: 0 5px;
+}
+
+.hour img {
+    width: 36px;
+    margin: 5px 0;
+}
