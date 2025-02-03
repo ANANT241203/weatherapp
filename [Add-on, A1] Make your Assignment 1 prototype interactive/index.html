@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="menu-icon">+</span>
+            <input type="text" id="citySearch" placeholder="Search city..." onkeypress="fetchWeather(event)">
+            <span class="menu-icon">⋮</span>
+        </div>
+        <div class="current-weather">
+            <div class="city-name" id="cityName">Philadelphia</div>
+            <div class="temperature" id="temperature">11&deg;</div>
+            <div class="condition" id="condition">Fog</div>
+            <div class="details">Humidity: <span id="humidity">93%</span></div>
+        </div>
+        <div class="hourly-section">
+            <h3>Hourly Forecast</h3>
+            <div class="hourly" id="hourly">
+                <!-- Hourly forecast data will be dynamically added here -->
+            </div>
+        </div>
+        <div class="forecast-section">
+            <h3>5-Day Forecast</h3>
+            <div class="forecast" id="forecast">
+                <!-- 5-day forecast data will be dynamically added here -->
+            </div>
+        </div>
+        <div class="extra-details">
+            <h3>Details</h3>
+            <p id="wind">Wind: 5 km/h</p>
+            <p id="pressure">Pressure: 1012 hPa</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
